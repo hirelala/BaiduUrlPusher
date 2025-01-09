@@ -1,0 +1,5 @@
+services:
+  pusher:
+    build: .
+    env_file:
+      - docker.env
