@@ -20,7 +20,7 @@ HEADERS = {'Content-Type': 'text/plain'}
 
 def fetch_yesterdays_job_urls() -> List[str]:
     """Fetch jobs published yesterday from the database."""
-    yesterday = datetime.now() - timedelta(days=2)
+    yesterday = datetime.now() - timedelta(days=1)
     start_of_yesterday = yesterday.replace(hour=0, minute=0, second=0, microsecond=0)
     end_of_yesterday = yesterday.replace(hour=23, minute=59, second=59, microsecond=999999)
 
